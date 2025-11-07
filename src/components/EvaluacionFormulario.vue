@@ -27,7 +27,7 @@ async function onSubmit() {
       Conocer mi oferta
     </button>
   </form>
-  <div v-if="resultado">
+  <div id="resultado" v-if="resultado">
     <h3>{{ resultado.status }}</h3>
     <h4>{{ resultado.mensaje }}</h4>
     <div v-if="resultado.data.aprobado">
